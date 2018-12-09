@@ -7,9 +7,21 @@ $lightColor:#fff;
 $darkColor:#000;
 $lightGrayColor:#eee;
 $normalGrayColor:#c4c2c2;
+$darkGrayColor:#212121;
 
 
-// mixins
+// fonts
+
+@font-face {
+    font-family: 'abraham_lincoln';
+    src: url('/src/assets/fonts/abrahamlincoln-webfont.eot');
+    src: url('/src/assets/fonts/abrahamlincoln-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/src/assets/fonts/abrahamlincoln-webfont.woff') format('woff'),
+         url('/src/assets/fonts/abrahamlincoln-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 

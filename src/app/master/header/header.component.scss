@@ -17,11 +17,13 @@
                 justify-content: space-between;
                 width:100%;
                 a{
+                    font:bold 16px  'PT Sans';
+                    letter-spacing: 5px;
                     color: $darkColor;
                     padding: 10px 20px;
                     cursor: pointer;
                     text-align: center;
-                    font-weight: bold;
+                    text-transform: uppercase;
                     &.active{
                         background: $darkColor;
                         color:$lightColor;

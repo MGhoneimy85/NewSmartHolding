@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements AfterViewInit {
   sticky: Boolean = false;
   menuPosition: any;
-  menuItems = ['home', 'packages', 'ourcompany', 'partners', 'contactus'];
+  menuItems = ['home', 'aboutus', 'companies', 'careers', 'contactus'];
 
   clicked = 'home';
   @ViewChild('stickyMenu') menuElement: ElementRef;
