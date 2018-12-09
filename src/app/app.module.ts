@@ -12,6 +12,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CareersComponent } from './careers/careers.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translation/', '.json');
@@ -22,7 +25,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    CareersComponent,
+    CompaniesComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,

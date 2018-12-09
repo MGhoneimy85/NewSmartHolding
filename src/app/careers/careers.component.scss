@@ -1,0 +1,61 @@
+@import 'variables';
+
+
+.careers-container{
+    background: $primaryColor;
+    .career-details{
+        h3{
+            font:normal 100px abraham_lincoln;
+            color: $darkColor;
+            text-transform: uppercase;
+            margin:60px 0 20px 0;
+        }
+        p{
+            font:normal 12px Roboto-regular;
+            color: $darkColor;
+            line-height: 22px;
+            width:80%;
+        }
+        form{
+            margin-top:50px;
+            input{
+                background: transparent;
+                border:1px $darkColor solid;
+                width:80%;
+                border-radius: 0;
+                font:normal 12px Roboto-regular;
+                height: 35px;
+            }
+            button{
+                background: transparent;
+                border:1px $darkColor solid;
+                text-transform: uppercase;
+                border-radius: 0;
+                font:normal 12px Roboto-regular;
+                height: 35px;
+                margin: 0 10px;
+            }
+        }
+    }
+    .career-img{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+@media(max-width:750px){
+    .careers-container{
+        .career-details{
+            form{
+                input{
+                    width:60%;
+                }
+            }
+        }
+    }
+    
+}
