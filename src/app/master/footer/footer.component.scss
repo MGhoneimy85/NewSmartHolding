@@ -6,26 +6,48 @@
     padding:30px 0;
     .footer-logo{
         img{
-            margin:0 60px;
+            margin: 20px 23px 0;
+            width: 90px;
         }
         
     }
     .footer-address{
-        div{
-            margin:0 60px;
+        >div{
+            margin:0 23px;
             h5{
                 color: $lightColor;
-                margin-bottom:20px
+                margin-bottom:30px;
+                font:normal 9px Roboto-bold;
+                text-transform: uppercase;
             }
             p{
-                color: $lightColor;
+                color: $ultraLightGrayColor;
+                font: normal 8px Roboto-medium;
+            }
+            .footer-social-media{
+                display: flex;
+                justify-content: start;
+                .social-media-item{
+                    background: #4d4d4d;
+                    border-radius: 50%;
+                    width:23px;
+                    height: 23px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin:0 5px;
+                    i{
+                        color: $darkGrayColor;
+                    }
+                }
             }
         }
         
     }
     .footer-copyrights{
-        padding:15px 0;
+        padding:25px 0 0;
         color:$lightColor;
+        font: normal 10px abraham_lincoln;
     }
 }
 
