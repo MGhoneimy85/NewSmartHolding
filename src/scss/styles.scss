@@ -11,7 +11,10 @@ body{
 
 .ar{
     direction: rtl;
-    font-family: Tahoma;
+    div, h1 , h2 , h3 , h4 , h5 , h6, p , a, span, input , button, input::placeholder {
+        letter-spacing: 0 !important;
+        font-family: Tahoma !important;
+    }
     .pull-left{
         float: right !important;
     }

@@ -33,8 +33,24 @@
             }
         }
     }
+    .lang{
+        position: absolute;
+        top:-30px;
+        right:0;
+        color: $lightColor;
+        cursor: pointer;
+    }
 }
 
+
+:host-context(.ar) {
+    .menu-container{
+        .lang{
+            left:0;
+            right: auto !important;
+        }
+    }
+}
 
 
 
