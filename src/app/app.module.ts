@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -39,6 +39,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpModule,
     OwlModule,
     HttpClientModule,
+    NgbModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

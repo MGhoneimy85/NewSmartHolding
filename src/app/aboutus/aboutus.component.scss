@@ -1,0 +1,82 @@
+@import 'variables';
+
+.accordion-container{
+    display: flex;
+    flex-direction: row;
+    height: 612px;
+    /deep/.card{
+        flex-direction: column;
+        height: 612px;
+        overflow: hidden;
+        border: 0;
+        border-radius: 0;
+        min-width:300px;
+        background-image: url(../../assets/images/our-mission.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-color: $lightColor;
+        opacity: .85;
+        .card-header{
+            background-color: transparent;
+            max-width: 300px;
+            border-bottom: 0;
+            h5{
+                button{
+                    font:normal 110px abraham_lincoln;
+                    color: $darkColor;
+                    text-transform: uppercase;
+                    line-height: 95px;
+                    text-align: left;
+                    white-space: unset;
+                    text-decoration: none;
+                }
+            }
+        }
+        .collapse{
+            &.show{
+                animation: animateElement linear 1s;
+                animation-iteration-count: 1;                
+                width:100%;
+            }
+        } 
+        &:last-child{
+            flex-direction: row-reverse;
+            background-image:  url(../../assets/images/our-vission.png);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-color: #d4a851;
+            opacity: .85;
+            .card-header{
+                display: flex;
+                align-items: flex-end;
+                h5{
+                    button{
+                        font:normal 110px abraham_lincoln;
+                        color: $darkColor;
+                        text-transform: uppercase;
+                        line-height: 95px;
+                        text-align: left;
+                        white-space: unset;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .collapse{
+                &.show{
+                    display: flex;
+                    align-items: flex-end;
+                }
+            } 
+        }
+        
+          @keyframes animateElement{
+            0% {
+              width:0;
+            }
+            100% {
+                width:100%;
+            }
+          }
+    }
+    
+}
