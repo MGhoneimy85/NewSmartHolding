@@ -1,3 +1,12 @@
-<p>
-  companies works!
-</p>
+<div class="container companies-container">
+  <div class="row">
+    <div class="col-md-4">
+        <h3>{{ 'our_companies' | translate }}</h3>
+    </div>
+    <div class="col-md-8 companies-list">
+        <div class="company" *ngFor="let company of companies;let i = index">
+            <img alt="" src="{{company}}" />
+          </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+@import 'variables';
+
+
+
+h3{
+    font:normal 115px abraham_lincoln;
+    color: $lightColor;
+    text-transform: uppercase;
+    margin-top: 25%;
+}
+
+.companies-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+    .company{
+        flex:1 1 25%;
+        padding: 20px;
+        text-align: center;
+        
+    }
+}
+
+
+@media(max-width:550px){
+    h3{
+        text-align: center;
+    }
+}

@@ -6,7 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./companies.component.scss']
 })
 export class CompaniesComponent implements OnInit {
-
+  companies = [
+    '../../assets/images/logo.png',
+    '../../assets/images/logo.png',
+    '../../assets/images/logo.png',
+    '../../assets/images/logo.png',
+    '../../assets/images/logo.png',
+    '../../assets/images/logo.png',
+    '../../assets/images/logo.png'
+];
   constructor() { }
 
   ngOnInit() {
