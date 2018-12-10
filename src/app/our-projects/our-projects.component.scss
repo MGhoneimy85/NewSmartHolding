@@ -1,0 +1,96 @@
+@import 'variables';
+.honor-div{
+    background: rgba(0,0,0,.65);
+    padding:22px 0;
+    margin:200px 0 0 0;
+    h3{
+        font:normal 44px century;
+        color: $primaryColor;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    h4{
+        font:normal 25px abraham_lincoln;
+        color: $lightColor;
+        text-transform: uppercase; 
+        width:50%;
+        margin: 0 auto;
+    }
+}
+
+h5{
+    font:normal 115px abraham_lincoln;
+    color: $lightColor;
+    text-transform: uppercase;
+    margin-top: 25%;
+}
+
+/deep/ .owl-stage{
+    height: 150px;
+    .owl-item{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 ;
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            .item-overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top:0;
+                left:0;
+                background: rgba(0,0,0,.7) url(../../assets/images/logo.png) no-repeat center center;
+                background-size: 25% 80%;
+
+            }
+        }
+    }
+}
+
+/deep/ .owl-nav{
+            position:absolute;
+            height:150px;
+            width: 100%;
+            top:0;
+            left:0;
+            margin-top:0!important;
+            .owl-prev{
+                position:absolute;
+                left:15px;
+                margin: 0!important;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    font-size: 80px;
+                    color: $lightColor;
+                    line-height: 40px;
+                }
+            }
+            .owl-next{
+                position:absolute;
+                right:15px;
+                margin: 0!important;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    font-size: 80px;
+                    color: $lightColor;
+                    line-height: 40px;
+                }
+            }
+        }
+
+@media (max-width:600px){
+    .owl-carousel-container{
+        padding:0;
+    }
+}

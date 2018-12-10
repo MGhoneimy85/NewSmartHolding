@@ -1,5 +1,12 @@
 @import 'variables';
 .app-main{
-    background: url(../assets/images/header-bg.png) no-repeat top center;
+    background: #000 url(../assets/images/header-bg.png) no-repeat top center;
     background-size: 100%;
+}
+
+
+@media (max-width:800px){
+    .app-main{
+        background-size: auto;
+    }
 }

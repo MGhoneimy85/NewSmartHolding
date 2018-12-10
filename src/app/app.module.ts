@@ -9,12 +9,14 @@ import { FooterComponent } from './master/footer/footer.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { OwlModule } from 'ngx-owl-carousel';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CareersComponent } from './careers/careers.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { OurProjectsComponent } from './our-projects/our-projects.component';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/translation/', '.json');
@@ -28,12 +30,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactUsComponent,
     CareersComponent,
     CompaniesComponent,
-    AboutusComponent
+    AboutusComponent,
+    OurProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
+    OwlModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
