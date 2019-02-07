@@ -14,7 +14,7 @@ export class HeaderComponent implements AfterViewInit {
   clicked = 'home';
   @ViewChild('stickyMenu') menuElement: ElementRef;
 
-  constructor(private language: TranslateService) { }
+  constructor(public language: TranslateService) { }
 
 
   ngAfterViewInit() {
