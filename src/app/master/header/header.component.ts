@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -42,3 +43,49 @@ export class HeaderComponent implements AfterViewInit {
   }
 
 }
+=======
+import { Component, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
+})
+export class HeaderComponent implements AfterViewInit {
+  sticky: Boolean = false;
+  menuPosition: any;
+  menuItems = ['home', 'aboutus', 'companies', 'careers', 'contactus'];
+
+  clicked = 'home';
+  @ViewChild('stickyMenu') menuElement: ElementRef;
+
+  constructor(public language: TranslateService) { }
+
+
+  ngAfterViewInit() {
+    this.menuPosition = this.menuElement.nativeElement.offsetTop;
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  handleScroll() {
+    if (window.innerWidth > 600) {
+      const windowScroll = window.pageYOffset;
+      if (windowScroll >= this.menuPosition) {
+        this.sticky = true;
+      } else {
+        this.sticky = false;
+      }
+    }
+  }
+  scroll(id) {
+    const el = document.getElementById(id);
+    el.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  }
+
+  onLangChange(lang: string) {
+    this.language.use(lang);
+  }
+
+}
+>>>>>>> c8e6090ea0df198445614dcae89f7e1034d1ee7f
