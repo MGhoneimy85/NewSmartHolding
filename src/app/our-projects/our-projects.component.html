@@ -3,21 +3,12 @@
   <h4 class="text-center">{{  'honor_sub_title' | translate}}</h4>
 </div>
 
-<h5 class="text-center">{{ 'our_projects' | translate }}</h5>
-
-<div class="d-none d-md-block" dir="LTR">
-  <div class="owl-carousel-container">
-    <owl-carousel #owlElement [options]="{ items: 4, dots: false, nav: true }" [carouselClasses]="['owl-theme', 'sliding']">
-      <div class="item" *ngFor="let image of images;let i = index">
-        <img src="{{image}}" />
-        <div class="item-overlay"></div>
-      </div>
-    </owl-carousel>
-  </div>
-</div>
-<div class="d-block d-md-none" dir="LTR">
+<h5 class="text-center d-none">{{ 'our_projects' | translate }}</h5>
+<div class="d-none">
+  <div class="d-none d-md-block" dir="LTR">
     <div class="owl-carousel-container">
-      <owl-carousel #owlElement [options]="{ items: 1, dots: false, nav: true }" [carouselClasses]="['owl-theme', 'sliding']">
+      <owl-carousel #owlElement [options]="{ items: 4, dots: false, nav: true }"
+        [carouselClasses]="['owl-theme', 'sliding']">
         <div class="item" *ngFor="let image of images;let i = index">
           <img src="{{image}}" />
           <div class="item-overlay"></div>
@@ -25,3 +16,15 @@
       </owl-carousel>
     </div>
   </div>
+  <div class="d-block d-md-none" dir="LTR">
+    <div class="owl-carousel-container">
+      <owl-carousel #owlElement [options]="{ items: 1, dots: false, nav: true }"
+        [carouselClasses]="['owl-theme', 'sliding']">
+        <div class="item" *ngFor="let image of images;let i = index">
+          <img src="{{image}}" />
+          <div class="item-overlay"></div>
+        </div>
+      </owl-carousel>
+    </div>
+  </div>
+</div>

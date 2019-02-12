@@ -34,9 +34,12 @@
         }
         .collapse{
             &.show{
-                animation: animateElement linear 1s;
-                animation-iteration-count: 1;                
+                // animation: animateElement linear 1s;
+                // animation-iteration-count: 1;                
                 width:100%;
+                .card-body{
+                    text-align: left
+                }
             }
         } 
         &:last-child{
@@ -79,4 +82,31 @@
           }
     }
     
+}
+
+
+:host-context(.ar) {
+    
+    .accordion-container{
+        flex-direction: row-reverse;
+        /deep/.card{
+            .card-header{
+                h5{
+                    button{
+                        font:normal 70px abraham_lincoln;
+                    }
+                }
+            }
+            .collapse{
+                &.show{            
+                    .card-body{
+                        text-align: right;
+                    }
+                }
+            } 
+            &:last-child{
+                flex-direction: row;
+            }
+        }
+    }
 }
