@@ -33,9 +33,7 @@
             }
         }
         .collapse{
-            &.show{
-                // animation: animateElement linear 1s;
-                // animation-iteration-count: 1;                
+            &.show{              
                 width:100%;
                 .card-body{
                     text-align: left
@@ -109,4 +107,23 @@
             }
         }
     }
+}
+
+@media(max-width:768px){
+
+    .accordion-container{
+        flex-direction: column;
+        height: auto;
+        /deep/.card{
+            flex-direction: column;
+            height: auto;
+            background-image: none;
+            &:last-child{
+                flex-direction: column;
+                background-image:  none;
+            }
+        }
+    }
+
+    
 }

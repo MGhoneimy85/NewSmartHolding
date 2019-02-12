@@ -1,10 +1,9 @@
-<div class="honor-div">
+<div class="honor-div" [ngClass]="{'projects-hidden' : hideOurProjects}" >
   <h3 class="text-center">{{  'honor_title' | translate}}</h3>
   <h4 class="text-center">{{  'honor_sub_title' | translate}}</h4>
 </div>
-
-<h5 class="text-center d-none">{{ 'our_projects' | translate }}</h5>
-<div class="d-none">
+<div [ngClass]="{'d-none' : hideOurProjects}" >
+  <h5 class="text-center">{{ 'our_projects' | translate }}</h5>
   <div class="d-none d-md-block" dir="LTR">
     <div class="owl-carousel-container">
       <owl-carousel #owlElement [options]="{ items: 4, dots: false, nav: true }"

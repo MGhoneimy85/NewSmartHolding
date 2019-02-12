@@ -6,7 +6,7 @@ import {OwlCarousel} from 'ngx-owl-carousel';
   styleUrls: ['./our-projects.component.scss']
 })
 export class OurProjectsComponent implements OnInit {
-
+  hideOurProjects: boolean = true;
   @ViewChild('owlElement') owlElement: OwlCarousel;
   images = [
       '../../assets/content-images/project1.png',
