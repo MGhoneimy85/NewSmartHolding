@@ -33,13 +33,14 @@
             }
         }
         .collapse{
-            &.show{              
+            &.show{
                 width:100%;
                 .card-body{
-                    text-align: left
+                    text-align: left;
+                    font: 18px;
                 }
             }
-        } 
+        }
         &:last-child{
             flex-direction: row-reverse;
             background-image:  url(../../assets/images/our-vission.png);
@@ -67,9 +68,9 @@
                     display: flex;
                     align-items: flex-end;
                 }
-            } 
+            }
         }
-        
+
           @keyframes animateElement{
             0% {
               width:0;
@@ -79,12 +80,12 @@
             }
           }
     }
-    
+
 }
 
 
 :host-context(.ar) {
-    
+
     .accordion-container{
         flex-direction: row-reverse;
         /deep/.card{
@@ -96,12 +97,12 @@
                 }
             }
             .collapse{
-                &.show{            
+                &.show{
                     .card-body{
                         text-align: right;
                     }
                 }
-            } 
+            }
             &:last-child{
                 flex-direction: row;
             }
@@ -125,5 +126,5 @@
         }
     }
 
-    
+
 }
